@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Фото і відео для вашого бізнесу — N9rider</title>
+<style>
+  :root {
+    --accent: #ff5a1f;
+    --accent-soft: #ff8c42;
+    --bg: #0d0d0f;
+    --card: #17171b;
+    --border: #2a2a31;
+    --text: #f2f2f4;
+    --muted: #9a9aa5;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.5;
+  }
+  .hero {
+    background: radial-gradient(circle at top, #2a1409 0%, var(--bg) 70%);
+    text-align: center;
+    padding: 72px 20px 88px;
+    border-bottom: 1px solid var(--border);
+  }
+  .badge {
+    display: inline-block;
+    background: rgba(255,90,31,0.15);
+    color: var(--accent-soft);
+    border: 1px solid rgba(255,90,31,0.4);
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+  .hero h1 { font-size: 36px; margin: 0 0 12px; font-weight: 700; }
+  .hero p { font-size: 18px; margin: 0 auto; max-width: 560px; color: var(--muted); }
+  .container { max-width: 900px; margin: -48px auto 0; padding: 0 20px; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 28px;
+    margin-bottom: 20px;
+  }
+  h2 { font-size: 22px; margin: 0 0 16px; }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px;
+  }
+  .service {
+    background: #121216;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 22px;
+    text-align: center;
+    transition: transform 0.15s, border-color 0.15s;
+  }
+  .service:hover { transform: translateY(-4px); border-color: var(--accent); }
+  .service .icon { font-size: 36px; margin-bottom: 8px; }
+  .service h3 { margin: 0 0 6px; font-size: 18px; }
+  .service p { color: var(--muted); margin: 0 0 14px; font-size: 15px; }
+  .price { font-size: 30px; font-weight: 800; color: var(--accent); }
+  .price small { font-size: 14px; color: var(--muted); font-weight: 400; }
+  .steps { list-style: none; counter-reset: step; padding: 0; margin: 0; }
+  .steps li {
+    counter-increment: step;
+    padding: 12px 0 12px 48px;
+    position: relative;
+    border-bottom: 1px solid var(--border);
+    color: var(--muted);
+  }
+  .steps li strong { color: var(--text); }
+  .steps li:last-child { border-bottom: none; }
+  .steps li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: var(--accent);
+    color: #fff;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .contact { text-align: center; }
+  .contact p { color: var(--muted); }
+  .btn {
+    display: inline-block;
+    background: var(--accent);
+    color: #fff;
+    text-decoration: none;
+    padding: 14px 28px;
+    border-radius: 999px;
+    font-weight: 700;
+    margin-top: 8px;
+    transition: background 0.15s;
+  }
+  .btn:hover { background: var(--accent-soft); }
+  .note { color: var(--muted); font-size: 14px; text-align: center; margin: 12px 0 0; }
+  footer { text-align: center; color: var(--muted); font-size: 14px; padding: 32px 20px 48px; }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <span class="badge">Швидко · Від 1 дня</span>
+  <h1>Фото і відео для вашого бізнесу</h1>
+  <p>Зроблю картинки для товарів, банери та короткі ролики для Instagram і TikTok.</p>
+</header>
+
+<main class="container">
+
+  <section class="card">
+    <h2>Послуги та ціни</h2>
+    <div class="grid">
+      <div class="service">
+        <div class="icon">🖼️</div>
+        <h3>Фото</h3>
+        <p>Картинки для товарів, постів і реклами</p>
+        <div class="price">$1 <small>/ фото</small></div>
+      </div>
+      <div class="service">
+        <div class="icon">🎬</div>
+        <h3>Відео</h3>
+        <p>Короткі ролики 10–20 сек для Reels, TikTok, Shorts</p>
+        <div class="price">$2 <small>/ відео</small></div>
+      </div>
+    </div>
+    <p class="note">Знижка при замовленні від 10 одиниць. Уточнюй у мене.</p>
+  </section>
+
+  <section class="card">
+    <h2>Як працюємо</h2>
+    <ol class="steps">
+      <li><strong>Опис.</strong> Надсилаєш, що потрібно, і приклади, які подобаються.</li>
+      <li><strong>Перші варіанти.</strong> Я роблю роботи і показую їх.</li>
+      <li><strong>Правки і здача.</strong> Вносимо зміни і передаю готові файли.</li>
+    </ol>
+  </section>
+
+  <section class="card contact">
+    <h2>Замовити</h2>
+    <p>Пиши в Telegram, відповім найближчим часом.</p>
+    <a class="btn" href="https://t.me/N9rider">Написати в Telegram: @N9rider</a>
+    <p class="note">Роботи створені з допомогою AI-інструментів.</p>
+  </section>
+
+</main>
+
+<footer>© N9rider</footer>
+
+</body>
+</html>
